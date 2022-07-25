@@ -1,0 +1,70 @@
+{
+  "name": "webpack-analyzer-hub",
+  "version": "0.0.1",
+  "description": "A hub of webpack analyzer to analyze webpack stats json.",
+  "productName": "Webpack analyzer hub",
+  "author": "Tang Lijin <ho_ho_gl@hotmail.com>",
+  "private": false,
+  "main": "index.js",
+  "bin": {
+    "webpack-analyzer-hub": "./bin/index.js"
+  },
+  "scripts": {
+    "dev": "quasar dev",
+    "dev:demo": "quasar dev --demo",
+    "dev:server": "node mocks/server/main.js",
+    "build": "quasar build",
+    "build:demo": "quasar build --demo",
+    "cli": "webpack-analyzer-hub",
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "axios": "^0.21.1",
+    "bundle-stats": "^4.0.1",
+    "chalk": "^4.1.2",
+    "core-js": "^3.6.5",
+    "default-passive-events": "^2.0.0",
+    "express": "^4.18.1",
+    "fs-extra": "^10.1.0",
+    "get-port": "^5.1.1",
+    "multer": "^1.4.5-lts.1",
+    "open": "^8.4.0",
+    "pinia": "^2.0.11",
+    "quasar": "^2.6.0",
+    "shelljs": "^0.8.5",
+    "uuid": "^8.3.2",
+    "vue": "^3.0.0",
+    "vue-i18n": "^9.0.0",
+    "vue-router": "^4.0.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-stats-report": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app-webpack": "^3.0.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "prettier": "^2.5.1"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
